@@ -1,9 +1,16 @@
 <?php
+?>
 
-$a = array();
-$a["vrouw"] = "truus";
-$a["leeftijd"] = 67;
-$a["gewicht"] = 64;
 
-echo $a["leeftijd"];
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP opdrachten</title>
+</head>
+<body>
+<p><?php echo "testje"; ?></p>
+</body>
+
+
+</html>
