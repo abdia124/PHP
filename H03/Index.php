@@ -10,8 +10,9 @@
 </head>
 <body>
 <?php for ($i = 1; $i <=9; $i++){
-    echo "<apen src= 'apen/aap".$i.".jpg'>";
+    echo "<img src= 'apen/aap".$i.".jpg'>";
 }
+
 ?>
 </body>
 
