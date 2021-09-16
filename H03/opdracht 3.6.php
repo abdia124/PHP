@@ -14,21 +14,19 @@
 <body>
 <?php
 
-$zwemmers = array("25", "32", "11","23");
+$zwemmers = array("25", "32", "11", "23");
 
-$De_spartelkuikens = 25;
-$De_waterbuffels = 32;
-$Plonsmderin = 11;
-$Bommetje = 23;
+//$plekken = array("De spartelkuikens", "De_waterbuffels", "Plonsmderin", "Bommetje" )
+//3;
 
-for ($i = 5; $i < 32; $i=$i+5)
-{ echo "<img src= 'zwem.jpg".$i."'>";}
-{
-echo "de Spartelkuikens hebben  zwemmers"."$i". $zwemmers[0];
+foreach ($zwemmers as $zwemmer) {
+    echo "de Spartelkuikens hebben $zwemmer zwemmers"; //$zwemmers[0];
+    for ($i = 5; $i < $zwemmer; $i = $i + 5) {
 
+        echo "<img src= 'zwem.jpg'>";
 
+    }
 }
 ?>
 </body>
 </html>
-echo "<img src= 'zwem.jpg".$i."'>";
