@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>zwemmen</title>
     <style>
-        img{
+        img {
             width: 40px;
         }
     </style>
@@ -19,20 +19,25 @@
 <body>
 <?php
 
-$zwemmers = array("25", "32", "11", "23");
+$zwemmers = array(25, 32, 11, 23);
 
-$plekken = array("De spartelkuikens", "De waterbuffels", "Plonsmderin", "Bommetje" );
+$plekken = array("De spartelkuikens", "De waterbuffels", "Plonsmderin", "Bommetje");
 
+$teller = 0;
 
-foreach ($zwemmers as $zwemmer) {
-    foreach ($plekken as $plek){
-    echo "$plek hebben $zwemmer zwemmers <br>"; //$zwemmers[0];
-    for ($i = 4; $i < $zwemmer; $i = $i + 5) {
+foreach ($plekken as $plek) {
+    $aantalZwemmers = $zwemmers[$teller];
+
+    echo "$plek hebben $aantalZwemmers zwemmers <br>";
+    $teller++;
+    $aantalPlaatjes = floor($aantalZwemmers / 5);
+    for ($i = 0; $i < $aantalPlaatjes; $i++) {
 
         echo "<img src= 'zwem.jpg'>";
 
+    }
+    echo "<br>";
 }
-}}
 ?>
 </body>
 </html>
