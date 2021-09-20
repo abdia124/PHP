@@ -21,16 +21,17 @@
 
 $zwemmers = array("25", "32", "11", "23");
 
-$plekken = array("De spartelkuikens", "De_waterbuffels", "Plonsmderin", "Bommetje" );
+$plekken = array("De spartelkuikens", "De waterbuffels", "Plonsmderin", "Bommetje" );
 
-foreach ($plekken as $plek){
+
 foreach ($zwemmers as $zwemmer) {
-    echo "$plek hebben $zwemmer zwemmers"; //$zwemmers[0];
+    foreach ($plekken as $plek){
+    echo "$plek hebben $zwemmer zwemmers <br>"; //$zwemmers[0];
     for ($i = 4; $i < $zwemmer; $i = $i + 5) {
 
         echo "<img src= 'zwem.jpg'>";
 
-    }
+}
 }}
 ?>
 </body>
