@@ -14,11 +14,10 @@
 <body>
 <?php
 function StringToArgument($a){
-$a = "nee";
-
-
+$a = strrev($a);
+return $a;
 }
-echo strrev StringToArgument($a);
+echo StringToArgument("ja");
 ?>
 </body>
 </html>
