@@ -1,2 +1,4 @@
 <?php
-print_r($_GET);
+if ($_POST['Voornaam'] == ""){
+    echo "Naam vereisd";
+}
