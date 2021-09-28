@@ -11,6 +11,10 @@
     <title>inlogpagina</title>
 </head>
 <body>
-
+<form action="checker.php" method="post">
+    E-mailadres <input type="email" name="E-mailadres" value=""><br><br>
+    Wachtwoord <input type="password" name="Wachtwoord" value="" > <br> <br>
+    <input type="submit" name="knop" value="verstuur" >
+</form>
 </body>
 </html>
