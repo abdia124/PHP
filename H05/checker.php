@@ -1,5 +1,5 @@
 <?php
-if ($_POST['E-mailadres' AND 'wachtwoord' ] =="piet@worldonline.nl" && "doetje123"){
+if ($_POST['E-mailadres'] =="piet@worldonline.nl" && $_POST['Wachtwoord']=="doetje123"){
     echo "welkom";
 
 }
