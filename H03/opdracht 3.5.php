@@ -13,14 +13,14 @@
 </head>
 <body>
 <?php
-//$x = 35;
-//while($x >= 25) {
-//    echo "hoppelepee";
-//    $x--;
-//
-//}
+$x = 35;
+while($x >= 25) {
+    echo "hoppelepee";
+    $x--;
 
-for ($y = 35; $y > 25; $y--){
+}
+
+for ($y = 5; $y <35; $y--){
 
     echo "hoppelepee";
 
