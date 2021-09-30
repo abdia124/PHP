@@ -1,26 +1,27 @@
 <?php
-if ($_POST['E-mailadres'] =="piet@worldonline.nl" && $_POST['Wachtwoord']=="doetje123"){
-    echo "welkom";
+
+
+$inlogUsernames = [
+
+    "piet@worldonline.nl" => "doetje123",
+
+    "truushendriks@wegweg.nl" => "snoepje777",
+
+    "Piet" => "arkiearkie201"
+];
+
+if (array_key_exists($_POST['E-mailadres'], $inlogUsernames) && $inlogUsernames[$_POST['E-mailadres']] === $_POST['Wachtwoord']) {
+
+    echo "Hij is er!!!!";
+
+} else {
+
+    echo "Geen toegang";
 
 }
-//elseif ($_POST['wachtwoord' == "doetje123"]){
 
 
-else {echo "verkeerde inloggevens";
 
-    echo "<a href= \"inlog.php\"><br> Terug naar hoofdpagina</a> <br>";}
-
-if ($_POST['E-mailadres'] == "klaas@carpets.nl" && "snoepje777"){
-    echo "welkom";
-}
-else {echo "verkeerde inloggevens";
-    echo "<a href= \"inlog.php\"><br> Terug naar hoofdpagina</a> <br>";}
-
-    if ($_POST['E-mailadres'] == "truushendriks@wegweg.nl" && "arkiearkie201") {
-        echo "welkom";
-    } else {echo "verkeerde inloggevens";
-
-        echo "<a href= \"inlog.php\"><br> Terug naar hoofdpagina</a> <br>";}
 
 
 
