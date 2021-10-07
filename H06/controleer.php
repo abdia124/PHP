@@ -14,7 +14,7 @@ if(isset($_POST["E-mailadres"])) {
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
-            echo "email: " . $row["email"] . " ww: " . $row ["wachtwoord"] . " ";
+//            echo "email: " . $row["email"] . " ww: " . $row ["wachtwoord"] . " ";
 
             echo "Welkom";
         }
