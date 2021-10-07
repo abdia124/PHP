@@ -41,8 +41,7 @@ if(isset($_POST["E-mailadres"])) {
     Wachtwoord <input type="password" name="Wachtwoord" value=""> <br> <br>
     <input type="submit" name="submit" value="login">
 </form>
-<?php
-?>
+
 </body>
 </html>
 
