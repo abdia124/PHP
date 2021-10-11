@@ -1,4 +1,18 @@
 <?php
+session_start();
+$users = array(
+    "janjaap" => "1234",
+    "bert" => "1235",
+    "jans" => "1236"
+);
+
+if (isset($_POST['knop'])
+    && isset($users[$_POST["login"]])
+    && $users[$_POST["login"]] == $_POST['pwd']) {
+    $_SESSION["user"] = $_POST["login"];
+}
+)
+
 ?>
 
 
@@ -12,12 +26,12 @@
     <title>Document</title>
 </head>
 <body>
-<form name="login" class="form"  method="post">
+<form name="login" class="form" method="post">
     E-mailadres <input type="email" name="E-mailadres" value=""><br><br>
     Wachtwoord <input type="password" name="Wachtwoord" value=""> <br> <br>
     <input type="submit" name="submit" value="login">
 </form>
-<form name="login" class="form"  method="post">
+<form name="login" class="form" method="post">
     E-mailadres <input type="email" name="E-mailadres" value=""><br><br>
     Wachtwoord <input type="password" name="Wachtwoord" value=""> <br> <br>
     <input type="submit" name="submit" value="login">
