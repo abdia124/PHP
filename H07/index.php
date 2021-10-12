@@ -37,5 +37,9 @@ if (isset($_POST['knop'])
     <div class="form-group">
         <label for="pwd">Password:</label>
         <input type="password" name="pwd" value="">
+    </div>
+    <input type="submit" name="knop">
+</form>
+<p> <a href="website.php">website</a> </p>
 </body>
 </html>
